@@ -1,5 +1,11 @@
+/* Body */
 body {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
     background-size: 100%;
+    background-color: rgb(255, 255, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -10,29 +16,29 @@ body {
 }
 
 .contenedor {
-    padding: 60px 0;
-    width: 90%;
+    padding: 10px 0;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
 
 .titulo {
-    color: black;
-    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 /* Header*/
 header {
     width: 100%;
-    height: 360px;
+    height: 550px;
     background: #dd3e54;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6be58580, #dd3e537d);
+    background: -webkit-linear-gradient(to right, #6be58580, #dd3e537d), url(../Img/logo-amalia-creativa.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6be58579, #dd3e533f);
+    background: linear-gradient(to right, #6be58579, #dd3e533f), url(../Img/logo-amalia-creativa.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -41,32 +47,37 @@ header {
 
 nav {
     text-align: right;
-    padding: 20px 50px 0 0;
+    padding: 30px 50px 0 0;
 }
 
-a {
+nav>ul>li>a {
     color: rgb(0, 0, 0);
-    font-weight: 350;
+    font-weight: 300;
     text-decoration: none;
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
 }
 
 .imagen-port {
-    background-image: url(../Img/327217104_559296512574782_3523425152735285458_n.jpg);
     display: flex;
     margin-left: 40px;
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
 }
 
-nav>a:hover {
-    text-decoration: underline;
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 header .textos-header {
     display: flex;
-    height: 330px;
+    height: 430px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -74,10 +85,21 @@ header .textos-header {
     text-align: center;
 }
 
+.textos-header h1 {
+    font-size: 150px;
+    font-family: 'Caveat', cursive;
+}
+
+.textos-header h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    font-weight: 300;
+}
+
 .textos-header {
     font-size: 50px;
     font-weight: 300;
-    color: rgba(102, 189, 180, 0.888);
+    color: rgba(9, 9, 9, 0.811);
 }
 
 .contenedor-sobre-nosotros {
@@ -111,62 +133,6 @@ header .textos-header {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-}
-
-
-footer {
-    background-color: rgba(0, 0, 0, 0.16);
-}
-
-footer {
-    margin: 0;
-    padding: 15px;
-    color: rgb(0, 0, 0);
-}
-
-footer .contenedor-footer {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-/*Contacto*/
-form {
-    width: 450px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-}
-
-form>h2 {
-    text-align: center;
-}
-
-input,
-textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
-
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-
-#boton {
-    padding: 20px;
-}
-
-#boton {
-    cursor: pointer;
 }
 
 /*Productos*/
@@ -215,4 +181,180 @@ h1.tituloproducto {
 .card .contenido h3 {
     font-weight: 400;
     margin-bottom: 15px;
+}
+
+/* Contacto */
+
+form {
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#boton {
+    background: #7f7b7b21;
+    color: black;
+    padding: 20px;
+    border: gray;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+/*Sobre nosotros*/
+/*Ubicacion*/
+
+.ubicacion-principal .ubicacion-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23vh;
+}
+
+.ubicacion-principal .ubicacion-titulo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.mapa-ubicado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*historia*/
+.parrafo {
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 400px;
+padding: 20px 10px;
+font-size: 20px;
+box-shadow: 1px 5px 25px rgba(0, 0, 0, .45);
+border-radius: 20px;
+text-align: justify;
+margin: auto;
+}
+
+.parrafo img{
+    width: 100%;
+    border-radius: 5px;
+    float: right;
+    margin-right: 15px;
+}
+
+
+/*Lo mas vendido*/
+.titulo-slider{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.slider-frame{
+    width: 50%;
+    height: 600px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-frame ul{
+    display: flex;
+    width: 400%;
+    animation: slide 10s infinite alternate linear;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+}
+
+/* Footer */
+
+/* Footer Redes Sociales*/
+footer .footer-sociales {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+footer .footer-sociales nav ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .footer-sociales nav ul li img:hover {
+    background-color: #ff825f70;
+    font-weight: bold;
+    border-radius: 2.5rem;
+}
+
+/* Footer derechos reservados*/
+footer .footer-derechos {
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.078);
+}
+
+footer .footer-derechos p {
+    text-align: center;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+footer .footer-derechos p a {
+    font-size: 1.1rem;
+    font-weight: bold;
 }

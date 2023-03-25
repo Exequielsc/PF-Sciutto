@@ -190,6 +190,55 @@ header .textos-header h2 {
   margin-bottom: 15px;
 }
 
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 250px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#boton {
+  background: rgba(127, 123, 123, 0.1294117647);
+  color: black;
+  padding: 20px;
+  border: gray;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -236,6 +285,75 @@ a {
 
 i {
   color: black;
+}
+
+footer .footer-sociales {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+footer .footer-sociales nav ul {
+  display: flex;
+  list-style: none;
+}
+footer .footer-sociales img:hover {
+  background-color: rgba(255, 130, 95, 0.4392156863);
+  font-weight: bold;
+  border-radius: 2.5rem;
+}
+
+footer .footer-derechos {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.078);
+}
+footer .footer-derechos p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer .footer-derechos p a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.ubicacion-principal .ubicacion-titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+.ubicacion-principal .ubicacion-titulo h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.mapa-ubicado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HISTORIA  SOBRE NOSOTROS */
+.parrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding: 20px 10px;
+  font-size: 20px;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  text-align: justify;
+  margin: auto;
+}
+.parrafo img {
+  width: 100%;
+  border-radius: 5px;
+  float: right;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

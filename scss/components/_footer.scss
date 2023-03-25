@@ -1,0 +1,22 @@
+footer .footer-sociales {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+        }
+    }
+
+    img {
+        &:hover {
+            background-color: #ff825f70;
+            font-weight: bold;
+            border-radius: 2.5rem;
+
+
+        }
+    }
+}

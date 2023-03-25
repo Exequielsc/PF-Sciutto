@@ -1,0 +1,241 @@
+body {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-size: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body .contenedor {
+  padding: 10px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+body .titulo {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 550px;
+  background: #dd3e54;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(107, 229, 133, 0.5019607843), rgba(221, 62, 83, 0.4901960784)), url(../Img/logo-amalia-creativa.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(107, 229, 133, 0.4745098039), rgba(221, 62, 83, 0.2470588235)), url(../Img/logo-amalia-creativa.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+header nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+header nav ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header .imagen-port {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 50px;
+  width: 100%;
+}
+header .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  color: rgba(9, 9, 9, 0.811);
+}
+header .textos-header h1 {
+  font-size: 150px;
+  font-family: "Caveat", cursive;
+}
+header .textos-header h2 {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.contenedor {
+  padding: 10px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sobre-nosotros .contenido-textos {
+  width: 50%;
+}
+.sobre-nosotros .contenido-textos h3 {
+  margin-bottom: 25px;
+}
+.sobre-nosotros .contenido-textos span {
+  background: rgb(14, 125, 127);
+  color: aliceblue;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
+}
+.sobre-nosotros .contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.tituloproducto {
+  color: black;
+  text-align: center;
+}
+.tituloproducto h1 {
+  color: black;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+}
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.card .contenido p {
+  line-height: 1.5;
+  color: #dd3e54;
+}
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+.card .card-body p {
+  line-height: 1.5;
+  color: #dd3e54;
+}
+.card .card-body h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.contenidocarrusel {
+  height: 400px;
+  width: 50%;
+  overflow: hidden;
+  justify-content: center;
+  margin-left: 25%;
+  border-radius: 25px;
+}
+
+.itemcarrusel {
+  height: 100%;
+  position: relative;
+}
+.itemcarrusel img {
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.tarjetacarrusel {
+  height: 100%;
+}
+
+.flechascarrusel {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */

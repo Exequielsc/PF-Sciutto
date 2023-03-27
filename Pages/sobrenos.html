@@ -9,29 +9,35 @@
     <!--css main-->
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="lomasvendido.html">Lo mas vendido</a>
-                    <a href="contacto.html">Contácto</a>
-                    <a href="sobrenos.html">Sobre Nosotros</a>
-                </li>
-            </ul>
-        </nav>
         <section class="textos-header">
             <h1>Amalia Creativa</h1>
             <h2>Hecho con mucho amor</h2>
         </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../Img/favicon-32x32.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav m-auto ">
+                        <a class="nav-link" href="../Pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../Pages/lomasvendido.html">Lo mas vendido</a>
+                        <a class="nav-link" href="../Pages/contacto.html">Contácto</a>
+                        <a class="nav-link" href="../Pages/sobrenos.html">Sobre Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-3.16,61.31 C229.34,115.44 269.97,-52.85 503.61,61.31 L501.92,163.66 L-0.00,149.60 Z"
@@ -40,18 +46,20 @@
         </div>
     </header>
 
-    <div class="parrafo">
-        <img src="../Img/cociendo-maquina.jpg">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores veritatis officia ducimus. Quasi
-            architecto, cumque repellendus consequatur ab perspiciatis quisquam rem alias consequuntur repudiandae
-            voluptatum officia similique ipsum est distinctio consectetur quos quibusdam dolor? Nam quo commodi
-            voluptates, expedita pariatur quibusdam non, quidem ipsum nostrum ad maiores distinctio! Minima odio
-            architecto iusto modi quasi dolores sequi pariatur at dolore! Vitae dicta et nam. Explicabo corrupti laborum
-            recusandae itaque tempore deserunt omnis sunt quod aspernatur, sint adipisci. Voluptates architecto fugiat
-            cum minus vel totam molestiae laudantium iusto incidunt error iure praesentium quae sequi aut sint beatae ex
-            perferendis, a rem!
-        </p>
+
+    <h1 class="tituloproducto">Te contamos un poco sobre nosotros</h1>
+
+    <div class="card" style="width: 90%;">
+        <img src="../Img/cociendo-maquina.jpg" class="card-img-top">
+        <div class="card-body">
+            <h3>Nuestra Historia.</h3>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam distinctio temporibus
+                minima, quis, id ipsa esse ducimus, nihil ipsum officiis cupiditate sapiente aliquam fuga hic. Veritatis
+                ratione, hic laborum odio possimus perspiciatis. Sit, voluptas id obcaecati neque quisquam totam nobis,
+                placeat excepturi incidunt soluta, ad nulla! Maiores, expedita aut! Atque.</p>
+        </div>
     </div>
+
 
 
     <section class="ubicacion-principal">
@@ -101,6 +109,10 @@
                     href="https://www.linkedin.com/in/exequiel-sciutto-786448142/" target="_blank"
                     title="Creado por Exequiel Sciutto">Creado por ExequielSc</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

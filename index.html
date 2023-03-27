@@ -9,27 +9,35 @@
     <!--css main-->
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    
+    <!--link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 
-<body background="color">
+<body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                    <a href="./Pages/productos.html">Productos</a>
-                    <a href="./Pages/lomasvendido.html">Lo mas vendido</a>
-                    <a href="./Pages/contacto.html">Contácto</a>
-                    <a href="./Pages/sobrenos.html">Sobre Nosotros</a>
-                </li>
-            </ul>
-        </nav>
         <section class="textos-header">
             <h1>Amalia Creativa</h1>
             <h2>Hecho con mucho amor</h2>
         </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./Img/favicon-32x32.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav m-auto ">
+                        <a class="nav-link" href="./Pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./Pages/lomasvendido.html">Lo mas vendido</a>
+                        <a class="nav-link" href="./Pages/contacto.html">Contácto</a>
+                        <a class="nav-link" href="./Pages/sobrenos.html">Sobre Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-3.16,61.31 C229.34,115.44 269.97,-52.85 503.61,61.31 L501.92,163.66 L-0.00,149.60 Z"
@@ -42,15 +50,15 @@
             <h2 class="titulo">Puntos claves sobre nuestros productos</h2>
             <div class="contenedor-sobre-nosotros">
                 <div class="contenido-textos">
-                    <h3><span>1</span>100% ecológicos</h3>
+                    <h3><span></span>100% ecológicos</h3>
                     <p>Uno de los detalles principales de nuestros productos es que son 100% ecológicos, eso quiere
                         decir que desde nuestro lugar ponemos un granito de arena para ayudar al medio ambiente.</p>
                     <br>
-                    <h3><span>2</span>Reutilizables</h3>
+                    <h3><span></span>Reutilizables</h3>
                     <p>Basta con ver la calidad de nuestro producto para saber que son reutilizables, con ésto, nos
                         aseguramos que puedas usar el producto, y si lo requiere, lavarlo para usarlo nuevamente.</p>
                     <br>
-                    <h3><span>3</span>Garantía</h3>
+                    <h3><span></span>Garantía</h3>
                     <p>Por que confiamos tanto en nuestros productos te damos la garantía para poder hacer cualquier
                         tipo de arreglo y/o cambio que así lo requiera.</p>
                 </div>
@@ -82,13 +90,15 @@
             </nav>
         </section>
         <section class="footer-derechos">
-            <p>
-                AMALIA CREATIVA ©2019-2023. TODOS LOS DERECHOS RESERVADOS. <a
-                    href="https://www.linkedin.com/in/exequiel-sciutto-786448142/" target="_blank"
+            <p>AMALIA CREATIVA ©2019-2023. TODOS LOS DERECHOS RESERVADOS.
+                <a href="https://www.linkedin.com/in/exequiel-sciutto-786448142/" target="_blank"
                     title="Creado por Exequiel Sciutto">Creado por ExequielSc</a>
+            </p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -7,6 +7,21 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+@media only screen and (max-width: 320px) {
+  body body {
+    padding-top: 5.4rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  body body {
+    padding-top: 6.3rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  body body {
+    padding-top: 6.5rem;
+  }
+}
 body .contenedor {
   padding: 10px 0;
   width: 100%;
@@ -67,7 +82,7 @@ header .wave {
 }
 header .textos-header {
   display: flex;
-  height: 430px;
+  height: 450px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -78,7 +93,7 @@ header .textos-header {
   color: rgba(9, 9, 9, 0.811);
 }
 header .textos-header h1 {
-  font-size: 150px;
+  font-size: 120px;
   font-family: "Caveat", cursive;
 }
 header .textos-header h2 {
@@ -86,7 +101,6 @@ header .textos-header h2 {
   font-size: 60px;
   font-weight: 300;
 }
-
 .contenedor {
   padding: 10px 0;
   width: 100%;
@@ -111,7 +125,7 @@ header .textos-header h2 {
   width: 50%;
 }
 .sobre-nosotros .contenido-textos h3 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .sobre-nosotros .contenido-textos span {
   background: rgb(14, 125, 127);
@@ -123,7 +137,7 @@ header .textos-header h2 {
   height: 30px;
   padding: 2px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .sobre-nosotros .contenido-textos p {
   padding: 0px 0px 30px 15px;
@@ -141,13 +155,7 @@ header .textos-header h2 {
   text-align: center;
 }
 
-.card-img-top {
-  width: 100%;
-  display: flex;
-  max-width: 1100px;
-}
-
-.card {
+.cards {
   width: 100%;
   margin: 20px;
   border-radius: 10px;
@@ -157,37 +165,41 @@ header .textos-header h2 {
   cursor: default;
   transition: all 400ms ease;
 }
-.card:hover {
+.cards:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
-.card img {
+.cards img {
   width: 100%;
   height: 250px;
 }
-.card .contenido {
+.cards .contenido {
   padding: 15px;
   text-align: center;
 }
-.card .contenido p {
+.cards .contenido p {
   line-height: 1.5;
   color: #dd3e54;
 }
-.card .contenido h3 {
+.cards .contenido h3 {
   font-weight: 400;
   margin-bottom: 15px;
 }
-.card .card-body {
+.cards .cards-body {
   padding: 15px;
   text-align: center;
 }
-.card .card-body p {
+.cards .cards-body p {
   line-height: 1.5;
   color: #dd3e54;
 }
-.card .card-body h3 {
+.cards .cards-body h3 {
   font-weight: 400;
   margin-bottom: 15px;
+}
+.cards .cards-img-top {
+  width: 100%;
+  max-width: 1100px;
 }
 
 form {
@@ -239,36 +251,32 @@ textarea {
     width: 100%;
   }
 }
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
+.carrusel h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
+  margin-top: 1rem;
 }
-
-.contenidocarrusel {
+.carrusel .contenidocarrusel {
+  margin-top: 2rem;
   height: 400px;
   width: 50%;
   overflow: hidden;
   justify-content: center;
   margin-left: 25%;
   border-radius: 25px;
+  margin-bottom: 2rem;
 }
-
-.itemcarrusel {
+.carrusel .contenidocarrusel .itemcarrusel {
   height: 100%;
   position: relative;
 }
-.itemcarrusel img {
+.carrusel .contenidocarrusel .itemcarrusel img {
   justify-content: center;
   width: 90%;
   height: 100%;
   border-radius: 25px;
 }
-
-.tarjetacarrusel {
-  height: 100%;
-}
-
-.flechascarrusel {
+.carrusel .contenidocarrusel .itemcarrusel .flechascarrusel {
   height: 100%;
   position: absolute;
   top: 0;
@@ -278,13 +286,14 @@ h2 {
   justify-content: space-between;
   padding: 20px;
 }
-
-a {
+.carrusel .contenidocarrusel .itemcarrusel .flechascarrusel a {
   text-decoration: none;
 }
-
-i {
+.carrusel .contenidocarrusel .itemcarrusel .flechascarrusel a i {
   color: black;
+}
+.carrusel .contenidocarrusel .itemcarrusel .tarjetacarrusel {
+  height: 100%;
 }
 
 footer .footer-sociales {
@@ -316,26 +325,32 @@ footer .footer-derechos p a {
 }
 
 /* HISTORIA  SOBRE NOSOTROS */
-.parrafo {
+.tituloproducto {
+  margin-top: 2rem;
+}
+
+.card {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   padding: 20px 10px;
   font-size: 20px;
-  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
-  border-radius: 20px;
   text-align: justify;
   margin: auto;
+  margin-top: 3rem;
 }
-.parrafo img {
-  width: 100%;
+.card img {
+  width: 50%;
   border-radius: 5px;
-  float: right;
   margin-right: 15px;
 }
-.parrafo p {
+.card h3 {
+  justify-content: center;
+  text-align: center;
+}
+.card p {
+  justify-content: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
